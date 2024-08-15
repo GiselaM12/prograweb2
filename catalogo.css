@@ -1,80 +1,50 @@
-.lilita-one-regular {
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  /* Estilos para el título de la tienda con la fuente "Lilita One" */
-.titulo-tienda {
-    font-family: "Lilita One", sans-serif; /* Fuente "Lilita One" */
-    font-weight: 400; /* Peso de fuente normal */
-    font-size: 3rem; /* Tamaño grande para destacar */
-    color: #fff; /* Color blanco del texto */
-    text-align: center; /* Centra el texto */
-    margin: 2rem 0; /* Espaciado arriba y abajo */
-    position: relative; /* Necesario para el efecto de subrayado */
-    text-transform: uppercase; /* Convierte el texto a mayúsculas */
-    letter-spacing: 0.5rem; /* Espaciado entre letras */
-    background-color: #000; /* Fondo negro para el título */
-    padding: 0.5em 0; /* Espaciado vertical adicional */
-    border-bottom: 4px solid #007acc; /* Subrayado azul */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada para dar profundidad */
-}
-
-/* Estilos para el subrayado en azul */
-.titulo-tienda::before {
-    content: "";
-    display: block;
-    width: 80%; /* Ajusta el ancho del subrayado */
-    height: 6px; /* Grosor del subrayado */
-    background-color: #007acc; /* Color azul para el subrayado */
-    position: absolute;
-    bottom: -6px; /* Posición del subrayado debajo del texto */
-    left: 50%;
-    transform: translateX(-50%); /* Centra el subrayado */
-    border-radius: 2px; /* Bordes ligeramente redondeados para el subrayado */
-}
-
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.navegacion {
-    background-color: #1a1a1a; /* Un tono negro más suave */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una ligera sombra */
-    padding: 0; /* Quita el padding adicional para que la altura sea consistente */
-}
-
-.navegacion ul {
-    list-style-type: none; /* Quita los puntos de la lista */
+body {
     margin: 0;
-    padding: 0; /* Quita el padding de la lista */
-    font-family: "Roboto", sans-serif;
-    display: flex; /* Los elementos de la lista estarán en línea */
-    justify-content: center; /* Centra los elementos de la lista horizontalmente */
+    background-color: #f0e7e5;
 }
 
-.navegacion li {
-    flex: 1; /* Hace que cada elemento ocupe el mismo ancho */
-    text-align: center; /* Centra el texto en cada elemento */
-    position: relative; /* Necesario para el posicionamiento del hover */
+header {
+    background-color: #285991;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
 }
 
-.navegacion a {
-    display: block;
-    color: white; /* Color del texto */
-    text-align: center;
-    padding: 1.5vw 0; /* Ajusta el espaciado interno */
-    text-decoration: none; /* Quita el subrayado */
-    border-radius: 0; /* Sin bordes redondeados para cubrir todo el espacio */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
-    height: 100%; /* Cubre toda la altura del elemento li */
-    line-height: 1; /* Ajusta la altura de línea para centrar el texto verticalmente */
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 20px;
 }
 
-.navegacion li:hover a {
-    background-color: #ffffff33; /* Fondo blanco semi-transparente al pasar el mouse */
-    color: #fff; /* Cambia a un blanco más puro para el texto */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 25px;
+    background-color: #0099ff;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007acc;
+    transform: scale(1.05);
+    color: #000000;
 }
